@@ -1,8 +1,6 @@
 var mongoose = require('mongoose');
 
 mongoose.Promise = global.Promise;
-mongoose.connect(process.env.MONGOLAB_CHARCOAL_URI || 'mongodb://localhost:27017/TodoApp');
+mongoose.connect(process.env.MONGOLAB_CHARCOAL_URI);
 
-module.export = {
-  mongoose
-}
+module.export = { mongoose };
